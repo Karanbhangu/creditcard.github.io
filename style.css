@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(red, blue);
+}
+
+#cc {
+  width: 350px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 10px;
+  height: 20%;
+}
+
+.heads {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  top: 10px;
+}
+
+#numbers {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  top: 30px;
+}
+
+#numbers h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#spanner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 45%;
+  font-size: 10px;
+  position: relative;
+  top: 10px;
+}
+
+#validations {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 45%;
+  position: relative;
+  top: 10px;
+}
+
+#holders {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 40%;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-family: "Courier New", Courier, monospace;
+}
+/* BACKSIDE: */
+#backcc{
+    width: 350px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;   
+}
+.intro{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 10%;
+}
+.bar{
+    height: 20px;
+    background-color: black;
+    margin-top: 8px;
+}
+.another{
+    height: 15%;
+    margin-top: 8px;
+}
+.mains{
+    display: inline-block;
+    background-color: blanchedalmond;
+    width: 70%;
+    height: 30px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+.mains span{
+    font-size: 15px;
+    font-family: fantasy;
+}
+#firstlorem{
+    margin-left: 9px;
+}
+#firstlorem h3{
+    font-size: 15px;
+    font-family: monospace;
+}
+#secondlorem{
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#insidelorem{
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: monospace;
+}
+#companys{
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    margin-right: 10px;
+}
