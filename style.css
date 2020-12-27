@@ -7,6 +7,18 @@
 body{
   overflow: hidden;
 }
+#firstbox{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+#secondbox{
+  position: relative;
+  top: 25px;
+}
+#secondbox a{
+  text-decoration: none;
+}
 .container {
   display: flex;
   align-items: center;
@@ -15,8 +27,9 @@ body{
   width: 100vw;
   background: #1c1c25;
   overflow: hidden;
+  flex-direction: column;
 }
-#cc {
+#cc{
   width: 380px;
   height: 230px;
   background: rgba(255, 255, 255, 0.05);
@@ -210,53 +223,38 @@ body{
 #padd{
   padding: 0px 10px;
 }
-
-@media screen and (max-width: 800px) {
-  .container{
+/* Light Mode */
+.lightcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(red, blue);
+  overflow: hidden;
+  flex-direction: column;
+}
+@media only screen and (max-width:800px){
+  #firstbox{
     flex-direction: column;
   }
   #backcc{
-    margin: 0;
-    margin-top: 15px;
+    margin: 8px 0px 5px 0px;
   }
 }
-@media screen and (max-width: 430px) {
-  #cc{
-    width: 280px;
-  height: 220px;
+@media only screen and (max-width:427px){
+  #firstbox{
+    flex-direction: column;
   }
   #backcc{
-    width: 280px;
-  height: 220px;
+    margin: 8px 0px 5px 0px;
   }
-  #chip img{
-    top: 5px;
-    width: 40px;
+  #cc{
+    width: 330px;
+    height: 250px;
   }
-  #name h2{
-    font-size: 20px;
-  }
-  .logo::before{
-    height: 80%;
-    width: 80%;
-    left: 25px;
-    top: 10px;
-  }
-  .logo::after{
-    height: 80%;
-    width: 80%;
-    left: 25px;
-    top: 10px;
-  }
-  .bar{
-    height: 15px;
-    margin-top: 4px;
-  }
-  #padd{
-    padding: 0px 3px;
-  }
-  #secondlorem{
-    top: 0px;
-    bottom: 4px;
+  #backcc{
+    width: 330px;
+    height: 250px;
   }
 }
