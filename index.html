@@ -9,56 +9,63 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="cc">
-            <div id="heading">
-                <h2 class="heads">DEBIT CARD</h2>
-                <h2 class="heads">BANK NAME</h2>
-            </div>
-            <div id="chip">
-                <img src="cc.png" alt="">
-            </div>
-            <div id="numbers">
-                <h2>0987 9876 8765 7654</h2>
-                <div id="spanner">
-                    <div id="first">
-                        <span>VALID THRU</span>
+    <div class="container" id="firstele">
+        <div id="firstbox">
+            <div id="cc">
+                <div id="heading">
+                    <h2 class="heads">DEBIT CARD</h2>
+                    <h2 class="heads">BANK NAME</h2>
+                </div>
+                <div id="chip">
+                    <img src="cc.png" alt="">
+                </div>
+                <div id="numbers">
+                    <h2>0123 4567 8901 2345</h2>
+                    <div id="spanner">
+                        <div id="first">
+                            <span>VALID THRU</span>
+                        </div>
+                        <div id="second">
+                            <h3>12/30</h3>
+                        </div>
                     </div>
-                    <div id="second">
-                        <h3>12/30</h3>
+                </div>
+                <div id="holders">
+                    <div id="name">
+                        <h2>KARAN BHANGU</h2>
+                    </div>
+                    <div id="company">
+                        <div id="logo">
+                            <div class="logo"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="holders">
-                <div id="name">
-                    <h2>KARAN BHANGU</h2>
+            <div id="backcc">
+                <div class="bar">
                 </div>
-                <div id="company">
-                    <div id="logo">
-                        <div class="logo"></div>
+                <div id="padd">
+                    <div id="autho">
+                        <h4></h4>Authorised Signature Not Valid Until Signed
+                    </div>
+                    <div class="another">
+                        <div class="mains"><span>000</span></div>
+                    </div>
+                    <div id="firstlorem">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                    </div>
+                    <div id="secondlorem">
+                        <div id="insidelorem">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur temporibus
+                            </h3>
+                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="backcc">
-            <div class="bar">
-            </div>
-            <div id="padd">
-                <div id="autho">
-                    <h4></h4>Authorised Signature Not Valid Until Signed
-                </div>
-                <div class="another">
-                    <div class="mains"><span>000</span></div>
-                </div>
-                <div id="firstlorem">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                </div>
-                <div id="secondlorem">
-                    <div id="insidelorem">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur temporibus</h3><h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
-                </div>
-            </div>
+        <div id="secondbox">
+            <a href="#"  id="mode" onclick="modechange()">LIGHT MODE</a>
         </div>
     </div>
 </body>
@@ -81,5 +88,6 @@
     //It also supports NodeList
     VanillaTilt.init(document.querySelectorAll(".your-element"));
 </script>
+<script src="app.js"></script>
 
 </html>
