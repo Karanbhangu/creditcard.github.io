@@ -210,3 +210,53 @@ body{
 #padd{
   padding: 0px 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .container{
+    flex-direction: column;
+  }
+  #backcc{
+    margin: 0;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #cc{
+    width: 280px;
+  height: 220px;
+  }
+  #backcc{
+    width: 280px;
+  height: 220px;
+  }
+  #chip img{
+    top: 5px;
+    width: 40px;
+  }
+  #name h2{
+    font-size: 20px;
+  }
+  .logo::before{
+    height: 80%;
+    width: 80%;
+    left: 25px;
+    top: 10px;
+  }
+  .logo::after{
+    height: 80%;
+    width: 80%;
+    left: 25px;
+    top: 10px;
+  }
+  .bar{
+    height: 15px;
+    margin-top: 4px;
+  }
+  #padd{
+    padding: 0px 3px;
+  }
+  #secondlorem{
+    top: 0px;
+    bottom: 4px;
+  }
+}
