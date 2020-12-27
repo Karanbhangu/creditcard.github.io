@@ -2,68 +2,87 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: rgb(207, 197, 197);
 }
-
+body{
+  overflow: hidden;
+}
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(red, blue);
+  background: #1c1c25;
+  overflow: hidden;
 }
-
 #cc {
-  width: 350px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(6px);
+  width: 380px;
+  height: 230px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 15px 35px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(6px);
-  border-radius: 10px;
+  transform-style: preserve-3d;
+  border-radius: 15px;
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 #heading {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   margin-right: 10px;
   height: 20%;
+  margin: 10px 5px 0px 5px;
 }
 
 .heads {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
-  position: absolute;
   top: 10px;
 }
-
+#chip img{
+  position: relative;
+  top: 10px;
+  width: 60px;
+}
 #numbers {
   height: 40%;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
   position: relative;
-  top: 30px;
+  top: 7px;
 }
 
 #numbers h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 #spanner {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-evenly;
   width: 45%;
   font-size: 10px;
   position: relative;
   top: 10px;
 }
-
+#first{
+  display: flex;
+  width: 10%;
+  font-size: 10px;
+  font-weight: bold;
+}
+#second{
+  position: relative;
+  left: 30px;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  font-size: 15px;
+}
 #validations {
   display: flex;
   align-items: flex-end;
@@ -78,37 +97,29 @@
   align-items: flex-end;
   justify-content: space-between;
   height: 40%;
-  margin-bottom: 8px;
-  margin-left: 12px;
-  margin-right: 12px;
   font-family: "Courier New", Courier, monospace;
 }
-/* BACKSIDE: */
 #backcc{
-    width: 350px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;   
+  width: 380px;
+  height: 230px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 15px 35px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+  transform-style: preserve-3d;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px
 }
-.intro{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 8px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 10%;
+#saxi{
+  padding: 0px 10px;
 }
 .bar{
     height: 20px;
     background-color: black;
-    margin-top: 8px;
+    margin-top: 7px;
 }
 .another{
     height: 15%;
@@ -116,49 +127,86 @@
 }
 .mains{
     display: inline-block;
-    background-color: blanchedalmond;
+    background-color: rgb(180, 180, 180);
     width: 70%;
     height: 30px;
-    margin-left: 8px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 15px;
+    position: relative;
+}
+.mains::before{
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
 }
 .mains span{
     font-size: 15px;
     font-family: fantasy;
+    margin-left: auto;
+    color: rgb(59, 57, 57);
 }
 #firstlorem{
-    margin-left: 9px;
+  position: relative;
+  top: 7px;
 }
 #firstlorem h3{
     font-size: 15px;
     font-family: monospace;
 }
 #secondlorem{
-    margin-top: 25px;
+    margin-top: 30px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    position: relative;
+    top: 10px;
 }
 #insidelorem{
-    margin-left: 5px;
     font-size: 14px;
     font-family: monospace;
 }
 #companys{
     font-size: 15px;
     font-family: "Courier New", Courier, monospace;
-    margin-right: 10px;
 }
-@media only screen and (max-width: 758px) {
-  .container{
-    flex-direction: column;
-  }
-  #backcc{
-    margin-left: 0px;
-    margin-top:12px;
-  }
-
+.logo{
+  width: 100px;
+  height: 50px;
+  position: relative;
+  right: 10px;
+}
+.logo::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  clip-path: circle();
+  transform: translateX(-15%);
+  opacity: 0.7;
+}
+.logo::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  clip-path: circle();
+  transform: translateX(15%); 
+  z-index: -1;
+  opacity: 0.5;
+}
+#autho{
+  margin-top: 10px;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#padd{
+  padding: 0px 10px;
 }
